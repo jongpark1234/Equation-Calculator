@@ -1,5 +1,7 @@
-export const Main = () => {
+const Main = () => {
     return (
         <div></div>
     )
 }
+
+export default Main

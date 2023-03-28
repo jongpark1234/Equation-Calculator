@@ -7,15 +7,17 @@ export const Router = () => {
     return (
         <style.background>
             <Sidebar/>
-            <Routes>
-                {
-                    routes.map((element, idx) => {
-                        return (
-                            <Route path={element.path} element={element.component} key={idx}/>
-                        )
-                    })
-                }
-            </Routes>
+            <style.main>
+                <Routes>
+                    {
+                        routes.map((element, idx) => {
+                            return (
+                                <Route path={element.path} element={element.component} key={idx}/>
+                                )
+                            })
+                        }
+                </Routes>
+            </style.main>
         </style.background>
     )
 }
