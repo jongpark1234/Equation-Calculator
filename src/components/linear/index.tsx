@@ -5,7 +5,7 @@ import { useState } from 'react'
 const Linear = () => {
     const [getFormula, setFormula] = useState('')
     const input = (s: string) => {
-        return s.replace(/[^x0-9 \+\*-\/\=\(\)]+/g, '')
+        return s.replace(/[^xXㅌ0-9 \+\*\-\/\=\(\)]+/g, '').replace(/[Xㅌ]+/, 'x')
     }
     return (
         <>
