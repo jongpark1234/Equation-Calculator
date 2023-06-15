@@ -12,10 +12,12 @@
     "@types/react-dom": "^18.0.11",
     "@types/react-router-dom": "^5.3.3",
     "algebra.js": "^0.2.6",
+    "chart.js": "^4.3.0",
     "mathjs": "^11.8.0",
     "nerdamer": "^1.1.13",
     "nerdamer-ts": "^1.2.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
@@ -49,6 +51,7 @@
   },
   "devDependencies": {
     "@types/algebra.js": "^0.2.2",
+    "@types/chart.js": "^2.9.37",
     "@types/styled-components": "^5.1.26"
   }
 }

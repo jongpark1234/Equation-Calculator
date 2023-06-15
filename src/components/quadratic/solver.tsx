@@ -11,7 +11,7 @@ const solver = (f: string): string | undefined => {
         if ([lhs.toString(), rhs.toString()].includes('undefined')) {
             return 'Wrong Expression.'
         }
-        if (lhs == rhs) {
+        if (lhs === rhs) {
             return 'Infinitely Many Solutions.'
         }
         return new Equation(lhs, rhs).solveFor('x')?.toString()

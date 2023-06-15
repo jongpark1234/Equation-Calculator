@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import * as style from './index.style'
 
 export const Sidebar = () => {

@@ -9,3 +9,11 @@ export const inputBox = styled.input`
     outline: none;
     box-shadow: 1px 1px 5px 2px lightgray;
 `
+
+export const chartContainer = styled.div`
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`

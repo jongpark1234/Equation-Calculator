@@ -5,9 +5,9 @@ import GlobalFonts from './styles/fonts/pretendard'
 import GlobalStyles from './styles/style'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <React.StrictMode>
+    <>
         <GlobalFonts/>
         <GlobalStyles/>
         <App/>
-    </React.StrictMode>
+    </>
 )
