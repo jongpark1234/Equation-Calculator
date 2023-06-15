@@ -20,41 +20,41 @@ const Linear = () => {
     const input = (s: string) => {
         return s.replace(/[^xXㅌ0-9 \+\*\-\/\=\(\)]+/g, '').replace(/[Xㅌ]+/, 'x')
     }
-    const data = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        datasets: [{
-            label: 'f(x) = y' as const,
-            borderColor: 'rgb(75, 192, 192)' as const,
-            backgroundColor: 'rgb(75, 192, 192)' as const,
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            borderWidth: 2,
-        }]
-    }
-    const options = {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'bottom' as const
-            },
-            title: {
-                display: true,
-                text: 'Graph'
-            }
-        },
-        interaction: {
-            mode: 'index' as const,
-            intersect: false
-        },
-        animation: {
-            duration: 0
-        },
-        scales: {
-            y: {
-                min: 0,
-                max: 180
-            }
-        }
-    }
+    // const data = {
+    //     labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    //     datasets: [{
+    //         label: 'f(x) = y' as const,
+    //         borderColor: 'rgb(75, 192, 192)' as const,
+    //         backgroundColor: 'rgb(75, 192, 192)' as const,
+    //         data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    //         borderWidth: 2,
+    //     }]
+    // }
+    // const options = {
+    //     responsive: true,
+    //     plugins: {
+    //         legend: {
+    //             position: 'bottom' as const
+    //         },
+    //         title: {
+    //             display: true,
+    //             text: 'Graph'
+    //         }
+    //     },
+    //     interaction: {
+    //         mode: 'index' as const,
+    //         intersect: false
+    //     },
+    //     animation: {
+    //         duration: 0
+    //     },
+    //     scales: {
+    //         y: {
+    //             min: 0,
+    //             max: 180
+    //         }
+    //     }
+    // }
 
     return (
         <>
@@ -64,9 +64,9 @@ const Linear = () => {
                 onChange={(e) => {setFormula(input(e.target.value))}}
             />
             <h2>x = {solver(getFormula)}</h2>
-            <style.chartContainer>
+            {/* <style.chartContainer>
                 <Line data={data} options={options}/>
-            </style.chartContainer>
+            </style.chartContainer> */}
         </>
     )
 }
